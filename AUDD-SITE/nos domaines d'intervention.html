@@ -1,11 +1,106 @@
-AUDD-ONGD
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <title>Nos domaines d'intervention - AUDD-ONGD</title>
+  <style>
+    body {
+      font-family: Times;
+      margin: 0;
+      background-color: #1b2e1b; /* Fond vert foncé */
+      color: #f0f0f0; /* Texte clair */
+    }
+
+    nav {
+      background-color: #264d26;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    nav .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    nav .logo span {
+      font-size: 22px;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav .menu a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav .menu a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      text-align: center;
+      color: #f0f0f0;
+      margin-top: 40px;
+    }
+
+    ul {
+      margin: 30px 50px;
+      padding-left: 20px;
+      font-size: 18px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .retour {
+      display: block;
+      width: fit-content;
+      margin: 40px auto;
+      padding: 10px 20px;
+      background-color: #e0e0e0; /* gris clair */
+      color: #d63384; /* rose */
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .retour:hover {
+      background-color: #cccccc;
+      color: #b02a70;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Barre de navigation -->
+  <nav>
+    <div class="logo">
+      <img src="audd.png" alt="Logo AUDD-ONGD">
+      <span>AUDD-ONGD</span>
+    </div>
+    <div class="menu">
+      <a href="index.html">Accueil</a>
+      <a href="apropos de audd.html">À propos</a>
+      <a href="nos projets.html">Projets</a>
+      <a href="nos domaines d'intervention.html">Domaines</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
   <h1>Nos domaines d'intervention</h1>
   <ul>
     <li>Santé</li>
@@ -14,8 +109,10 @@ AUDD-ONGD
     <li>Protection</li>
     <li>Nutrition</li>
     <li>Agriculture</li>
-    <li>Pêche et Elévage</li>
+    <li>Pêche et Élevage</li>
   </ul>
-  <a href="index.html">Retour à l'accueil</a>
+
+  <a href="index.html" class="retour">Retour à la page d'accueil</a>
+
 </body>
 </html>
